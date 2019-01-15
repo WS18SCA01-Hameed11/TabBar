@@ -1,24 +1,442 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EHD-SD-05u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search-->
+        <scene sceneID="kfT-1E-6IT">
+            <objects>
+                <viewController id="Dbh-Ud-d1g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8P7-gB-9GK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q3I-hx-lAQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="g7t-FK-la9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0O-zM-7SS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1239" y="-887"/>
+        </scene>
+        <!--Apple Inc-->
+        <scene sceneID="Coz-Zf-ucP">
+            <objects>
+                <viewController id="aNh-b4-ydZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17E-hC-5kx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="lrI-hN-LEy">
+                                <rect key="frame" x="60" y="130" width="255" height="256"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="apple invention history" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4r-WQ-RE7">
+                                <rect key="frame" x="34" y="394" width="307" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lrI-hN-LEy" firstAttribute="top" secondItem="Xfu-ua-c5Z" secondAttribute="top" constant="14" id="98E-bF-zui"/>
+                            <constraint firstItem="Xfu-ua-c5Z" firstAttribute="trailing" secondItem="f4r-WQ-RE7" secondAttribute="trailing" constant="34" id="O6R-9p-ceB"/>
+                            <constraint firstItem="lrI-hN-LEy" firstAttribute="leading" secondItem="Xfu-ua-c5Z" secondAttribute="leading" constant="60" id="iOa-tf-AP3"/>
+                            <constraint firstItem="f4r-WQ-RE7" firstAttribute="leading" secondItem="Xfu-ua-c5Z" secondAttribute="leading" constant="34" id="iuO-NW-BtP"/>
+                            <constraint firstItem="Xfu-ua-c5Z" firstAttribute="trailing" secondItem="lrI-hN-LEy" secondAttribute="trailing" constant="60" id="lS1-Ra-uoI"/>
+                            <constraint firstItem="f4r-WQ-RE7" firstAttribute="top" secondItem="lrI-hN-LEy" secondAttribute="bottom" constant="8" id="od9-Bp-Mvu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xfu-ua-c5Z"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Apple Inc" id="bYB-QX-Rgy">
+                        <barButtonItem key="rightBarButtonItem" title="1976" id="EWg-tv-U1D">
+                            <connections>
+                                <segue destination="vFM-5h-ZaM" kind="show" id="tSd-Hk-Z3u"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8e-du-yK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3338" y="1012"/>
+        </scene>
+        <!--1976-->
+        <scene sceneID="pLV-Yj-5lZ">
+            <objects>
+                <viewController id="vFM-5h-ZaM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="96A-2y-Kv5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1976" translatesAutoresizingMaskIntoConstraints="NO" id="rka-24-Bcq">
+                                <rect key="frame" x="60" y="130" width="255" height="133"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC7-Mu-koA">
+                                <rect key="frame" x="30" y="283" width="315" height="142.5"/>
+                                <string key="text">Apple's first product, the Apple I, invented by Apple co-founder Steve Wozniak, was sold as an assembled circuit board and lacked basic features such as a keyboard, monitor, and case. The owner of this unit added a keyboard and wooden case</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rka-24-Bcq" firstAttribute="top" secondItem="Rm1-6b-5nV" secondAttribute="top" constant="14" id="6qs-Ph-Kz0"/>
+                            <constraint firstItem="bC7-Mu-koA" firstAttribute="top" secondItem="rka-24-Bcq" secondAttribute="bottom" constant="20" id="L5c-Ub-eMT"/>
+                            <constraint firstItem="rka-24-Bcq" firstAttribute="leading" secondItem="Rm1-6b-5nV" secondAttribute="leading" constant="60" id="Pkw-l7-7ax"/>
+                            <constraint firstItem="bC7-Mu-koA" firstAttribute="leading" secondItem="Rm1-6b-5nV" secondAttribute="leading" constant="30" id="YyB-vB-oRI"/>
+                            <constraint firstItem="Rm1-6b-5nV" firstAttribute="trailing" secondItem="rka-24-Bcq" secondAttribute="trailing" constant="60" id="beg-bQ-1mR"/>
+                            <constraint firstItem="Rm1-6b-5nV" firstAttribute="trailing" secondItem="bC7-Mu-koA" secondAttribute="trailing" constant="30" id="ocM-HF-BwV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rm1-6b-5nV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="1976" id="Yon-d7-2Am">
+                        <barButtonItem key="rightBarButtonItem" title="1984" id="Pyr-pt-29q">
+                            <connections>
+                                <segue destination="tsu-qD-BfB" kind="show" id="fFX-H4-Xyc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLW-eh-nsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2522.4000000000001" y="1011.544227886057"/>
+        </scene>
+        <!--1984-->
+        <scene sceneID="O92-Va-dEX">
+            <objects>
+                <viewController id="tsu-qD-BfB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lx5-FY-8ta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1984" translatesAutoresizingMaskIntoConstraints="NO" id="nLC-iI-lND">
+                                <rect key="frame" x="60" y="130" width="255" height="146"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXL-VH-Tkg">
+                                <rect key="frame" x="30" y="296" width="315" height="81.5"/>
+                                <string key="text">The Macintosh, released in 1984, was the first mass-market personal computer that featured an integral graphical user interface and mouse.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rXL-VH-Tkg" firstAttribute="top" secondItem="nLC-iI-lND" secondAttribute="bottom" constant="20" id="Ih9-Jn-5zQ"/>
+                            <constraint firstItem="FP7-V8-qLw" firstAttribute="trailing" secondItem="nLC-iI-lND" secondAttribute="trailing" constant="60" id="VdZ-Fj-hJM"/>
+                            <constraint firstItem="FP7-V8-qLw" firstAttribute="trailing" secondItem="rXL-VH-Tkg" secondAttribute="trailing" constant="30" id="fU5-Gb-WoK"/>
+                            <constraint firstItem="rXL-VH-Tkg" firstAttribute="leading" secondItem="FP7-V8-qLw" secondAttribute="leading" constant="30" id="hVr-1b-zNm"/>
+                            <constraint firstItem="nLC-iI-lND" firstAttribute="leading" secondItem="FP7-V8-qLw" secondAttribute="leading" constant="60" id="tO7-vY-UkE"/>
+                            <constraint firstItem="nLC-iI-lND" firstAttribute="top" secondItem="FP7-V8-qLw" secondAttribute="top" constant="14" id="u1B-gU-H9d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FP7-V8-qLw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="1984" id="Ydb-Sv-rzG">
+                        <barButtonItem key="rightBarButtonItem" title="1989" id="ezA-bP-VE7">
+                            <connections>
+                                <segue destination="5vu-AN-I5f" kind="show" id="Nfr-OA-7GQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KF3-GB-VbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1674.4000000000001" y="1011.544227886057"/>
+        </scene>
+        <!--1989-->
+        <scene sceneID="bgr-Jc-xmH">
+            <objects>
+                <viewController id="5vu-AN-I5f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOY-za-PVd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1989" translatesAutoresizingMaskIntoConstraints="NO" id="3Uz-rE-pk8">
+                                <rect key="frame" x="60" y="130" width="255" height="184"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Macintosh Portable, released in 1989, was Apple's first battery-powered portable Macintosh personal computer." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9N-G1-YLh">
+                                <rect key="frame" x="30" y="334" width="315" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Uz-rE-pk8" firstAttribute="leading" secondItem="kqY-Ka-q90" secondAttribute="leading" constant="60" id="4GO-rs-g3x"/>
+                            <constraint firstItem="E9N-G1-YLh" firstAttribute="top" secondItem="3Uz-rE-pk8" secondAttribute="bottom" constant="20" id="8NV-9i-hhA"/>
+                            <constraint firstItem="3Uz-rE-pk8" firstAttribute="top" secondItem="kqY-Ka-q90" secondAttribute="top" constant="14" id="BB9-xO-kqC"/>
+                            <constraint firstItem="E9N-G1-YLh" firstAttribute="leading" secondItem="kqY-Ka-q90" secondAttribute="leading" constant="30" id="dgc-Q2-akN"/>
+                            <constraint firstItem="kqY-Ka-q90" firstAttribute="trailing" secondItem="E9N-G1-YLh" secondAttribute="trailing" constant="30" id="mk1-ye-HI6"/>
+                            <constraint firstItem="kqY-Ka-q90" firstAttribute="trailing" secondItem="3Uz-rE-pk8" secondAttribute="trailing" constant="60" id="zgd-0p-klb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kqY-Ka-q90"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="1989" id="jK0-J8-uM9">
+                        <barButtonItem key="rightBarButtonItem" title="1992" id="bKM-SV-qGO">
+                            <connections>
+                                <segue destination="Xd4-UX-lL5" kind="show" id="oTq-LY-Zkf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtg-oU-nP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-928.79999999999995" y="1014.2428785607198"/>
+        </scene>
+        <!--1992-->
+        <scene sceneID="myY-4g-6WL">
+            <objects>
+                <viewController id="Xd4-UX-lL5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DLv-u5-7GG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1992" translatesAutoresizingMaskIntoConstraints="NO" id="qJb-EB-Fk1">
+                                <rect key="frame" x="60" y="130" width="255" height="134"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spV-s9-7N5">
+                                <rect key="frame" x="30" y="284" width="315" height="101.5"/>
+                                <string key="text">The Penlite was Apple's first attempt at a tablet computer. Created in 1992, the project was designed to bring the Mac OS to a tablet – but was shelved in favor of the Newton.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vsl-gB-3P9" firstAttribute="trailing" secondItem="spV-s9-7N5" secondAttribute="trailing" constant="30" id="CPc-wf-tSA"/>
+                            <constraint firstItem="spV-s9-7N5" firstAttribute="leading" secondItem="vsl-gB-3P9" secondAttribute="leading" constant="30" id="Syk-xW-Fb1"/>
+                            <constraint firstItem="vsl-gB-3P9" firstAttribute="trailing" secondItem="qJb-EB-Fk1" secondAttribute="trailing" constant="60" id="UeZ-wO-WUJ"/>
+                            <constraint firstItem="spV-s9-7N5" firstAttribute="top" secondItem="qJb-EB-Fk1" secondAttribute="bottom" constant="20" id="ZRI-Bq-uhZ"/>
+                            <constraint firstItem="qJb-EB-Fk1" firstAttribute="top" secondItem="vsl-gB-3P9" secondAttribute="top" constant="14" id="evv-yh-FRP"/>
+                            <constraint firstItem="qJb-EB-Fk1" firstAttribute="leading" secondItem="vsl-gB-3P9" secondAttribute="leading" constant="60" id="vML-0Y-3Yw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vsl-gB-3P9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="1992" id="uip-NB-TPr">
+                        <barButtonItem key="rightBarButtonItem" title="1994" id="Rrs-jT-ZBm">
+                            <connections>
+                                <segue destination="SSD-ri-PMZ" kind="show" id="OO1-qq-d8K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SxM-pZ-TRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="1015.1424287856073"/>
+        </scene>
+        <!--1994-->
+        <scene sceneID="xF3-VK-9CJ">
+            <objects>
+                <viewController id="SSD-ri-PMZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kxV-tG-avZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1994" translatesAutoresizingMaskIntoConstraints="NO" id="Ouy-wt-blP">
+                                <rect key="frame" x="60" y="130" width="255" height="156"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8I-Dj-eel">
+                                <rect key="frame" x="30" y="306" width="315" height="101.5"/>
+                                <string key="text">Power Mac was a line of Apple Macintosh workstation-class personal computers based on various models of PowerPC microprocessors that were developed from 1994 to 2006.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ouy-wt-blP" firstAttribute="top" secondItem="jcc-ll-f4n" secondAttribute="top" constant="14" id="0j4-by-lb9"/>
+                            <constraint firstItem="Ouy-wt-blP" firstAttribute="leading" secondItem="jcc-ll-f4n" secondAttribute="leading" constant="60" id="1Wh-JZ-fYI"/>
+                            <constraint firstItem="jcc-ll-f4n" firstAttribute="trailing" secondItem="Ouy-wt-blP" secondAttribute="trailing" constant="60" id="41X-jF-Fkj"/>
+                            <constraint firstItem="jcc-ll-f4n" firstAttribute="trailing" secondItem="t8I-Dj-eel" secondAttribute="trailing" constant="30" id="EQh-WJ-Qx4"/>
+                            <constraint firstItem="t8I-Dj-eel" firstAttribute="leading" secondItem="jcc-ll-f4n" secondAttribute="leading" constant="30" id="kay-Wy-kLv"/>
+                            <constraint firstItem="t8I-Dj-eel" firstAttribute="top" secondItem="Ouy-wt-blP" secondAttribute="bottom" constant="20" id="xzV-dI-laT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jcc-ll-f4n"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="1994" id="wax-5a-hco">
+                        <barButtonItem key="rightBarButtonItem" title="2006" id="5LL-3J-Ndt">
+                            <connections>
+                                <segue destination="Bob-z5-go4" kind="show" id="niT-PQ-TfO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJu-qD-fKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="1025.9370314842579"/>
+        </scene>
+        <!--2006-->
+        <scene sceneID="eyB-P6-bQJ">
+            <objects>
+                <viewController id="Bob-z5-go4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tza-2D-7Us">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2006" translatesAutoresizingMaskIntoConstraints="NO" id="TQJ-NU-HsC">
+                                <rect key="frame" x="60" y="130" width="255" height="177"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The MacBook Pro, Apple's first laptop with an Intel microprocessor, introduced in 2006." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rJ-U9-DKe">
+                                <rect key="frame" x="30" y="327" width="315" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TQJ-NU-HsC" firstAttribute="leading" secondItem="FCw-uU-7f1" secondAttribute="leading" constant="60" id="2DA-c6-7Sf"/>
+                            <constraint firstItem="FCw-uU-7f1" firstAttribute="trailing" secondItem="2rJ-U9-DKe" secondAttribute="trailing" constant="30" id="BNF-W3-pHp"/>
+                            <constraint firstItem="2rJ-U9-DKe" firstAttribute="top" secondItem="TQJ-NU-HsC" secondAttribute="bottom" constant="20" id="Ckn-eR-CjY"/>
+                            <constraint firstItem="2rJ-U9-DKe" firstAttribute="leading" secondItem="FCw-uU-7f1" secondAttribute="leading" constant="30" id="epx-S4-TXX"/>
+                            <constraint firstItem="FCw-uU-7f1" firstAttribute="trailing" secondItem="TQJ-NU-HsC" secondAttribute="trailing" constant="60" id="rgV-NX-ywO"/>
+                            <constraint firstItem="TQJ-NU-HsC" firstAttribute="top" secondItem="FCw-uU-7f1" secondAttribute="top" constant="14" id="uAc-wO-dBr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FCw-uU-7f1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="2006" id="s9B-mL-UrL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqh-K7-p3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.5999999999999" y="1033.1334332833585"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bbc-cE-AqQ">
+            <objects>
+                <tabBarController id="EHD-SD-05u" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GQ9-5z-XQl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="udO-sK-Fzg" kind="relationship" relationship="viewControllers" id="Jff-CO-HSg"/>
+                        <segue destination="zTg-Ha-zET" kind="relationship" relationship="viewControllers" id="fhx-AT-K55"/>
+                        <segue destination="xRh-xN-RfI" kind="relationship" relationship="viewControllers" id="t4V-3L-gXG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0j-lu-yO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3738" y="-407"/>
+        </scene>
+        <!--Hameed-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Hameed" id="MyU-eY-bo1">
+                        <barButtonItem key="rightBarButtonItem" title="2017" id="Bwz-Ai-2r9">
+                            <connections>
+                                <segue destination="uT7-fE-XfX" kind="show" id="A8X-wc-nnJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1239" y="194"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Rn-6e-FKF">
+            <objects>
+                <viewController id="uT7-fE-XfX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lTa-XR-0xx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BeO-eE-3iM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F5P-VN-qhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="197"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="jlu-AI-iot">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="udO-sK-Fzg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home_Selected" id="YUO-0l-CnJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MUI-aP-Gp2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aNh-b4-ydZ" kind="relationship" relationship="rootViewController" id="jd8-rA-XEm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FL9-z4-LC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4130" y="1012"/>
+        </scene>
+        <!--profile-->
+        <scene sceneID="18x-La-dpH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xRh-xN-RfI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="profile" image="Profile" selectedImage="Profile_Selected" id="LAt-Ny-hsY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Pef-nT-Z4H">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GP7-iN-klB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBL-Eo-dbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2478" y="112"/>
+        </scene>
+        <!--search-->
+        <scene sceneID="Z9a-ZO-YTS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zTg-Ha-zET" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="search" image="Search" selectedImage="Search_Selected" id="kFJ-sa-bjw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="0Nh-ex-xwR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dbh-Ud-d1g" kind="relationship" relationship="rootViewController" id="gbb-rM-v81"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWB-3y-Tqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2415" y="-927"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1976" width="220" height="133"/>
+        <image name="1984" width="220" height="146"/>
+        <image name="1989" width="220" height="184"/>
+        <image name="1992" width="220" height="134"/>
+        <image name="1994" width="130" height="156"/>
+        <image name="2006" width="220" height="177"/>
+        <image name="Home" width="21" height="23"/>
+        <image name="Home_Selected" width="21" height="23"/>
+        <image name="Profile" width="20" height="21"/>
+        <image name="Profile_Selected" width="20" height="21"/>
+        <image name="Search" width="23" height="22"/>
+        <image name="Search_Selected" width="23" height="22"/>
+        <image name="apple" width="256" height="256"/>
+    </resources>
 </document>
